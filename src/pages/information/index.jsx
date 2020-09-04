@@ -15,7 +15,14 @@ class Index extends Component {
   componentDidHide() {}
 
   render() {
-    const text = `正文内容 &nbsp; &nbsp; &nbsp; &nbsp; 正文内容 &nbsp; &nbsp; &nbsp; &nbsp; 正文内容`
+    const text = `
+      正文内容 &nbsp; &nbsp; &nbsp; &nbsp; 正文内容 &nbsp; &nbsp; &nbsp; &nbsp; 正文内容
+
+      &amp; &amp; &amp;
+
+      &lt;	&lt;	&lt;
+    `
+
     return (
       <View className='index'>
         {/* TODO: issue: https://github.com/NervJS/taro/issues/7531 */}
