@@ -7,10 +7,12 @@ export default {
     navigationBarTextStyle: 'black'
   },
   tabBar: {
-    custom: true,
+    // TODO: issue: https://github.com/NervJS/taro/issues/7302
+    // 复现时，开启custom
+    // custom: true,
     color: '#000000',
-    selectedColor: '#000000',
-    backgroundColor: '#000000',
+    selectedColor: '#00f',
+    backgroundColor: '#ffffff',
     list: [
       {
         pagePath: 'pages/information/index',
